@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tech-1",
+    "category": "tech_advance",
+    "title": "NIST CMVP、FIPS 140-2認証モジュールを2026年9月21日付で全件Historical（廃止）扱いに移行",
+    "tech_area": "標準化",
+    "summary": "NISTの暗号モジュール検証プログラム（CMVP）は2026年9月21日、残存していたFIPS 140-2認証をすべてHistoricalリストへ移行した。これにより連邦調達等ではFIPS 140-3検証済みモジュールのみが有効となり、耐量子暗号（ML-KEM/ML-DSA等）の実装も最終的にFIPS 140-3準拠での検証が必要になる。",
+    "maturity": "製品化済み",
+    "relevance": "連邦調達・FedRAMP・HIPAA等でFIPS準拠を要件とする組織は、既存製品のFIPS 140-3再検証状況の確認と、PQC移行計画への影響評価が必要になる。",
+    "source_name": "SafeLogic Blog / NIST CSRC",
+    "source_url": "https://www.safelogic.com/blog/what-happens-on-september-21-2026",
+    "published_at": "2026-09-21T00:00:00Z"
+  },
+  {
+    "id": "tech-2",
+    "category": "tech_advance",
+    "title": "IETF、security.txtに製品セキュリティ用の新フィールド（Product-Security/Product-Security-Policy）を提案するInternet-Draftを公開",
+    "tech_area": "標準化",
+    "summary": "2026年9月10日付で公開されたIETF Internet-Draftは、security.txt（RFC 9116）フォーマットに「Product-Security」「Product-Security-Policy」の2フィールドを追加登録する提案。組織が自社Webインフラとは別に、製造・提供する製品の脆弱性連絡先・開示ポリシーを明示できるようにする。",
+    "maturity": "研究段階",
+    "relevance": "IoT機器メーカーやソフトウェアベンダーの脆弱性開示プロセス標準化に資する可能性があり、将来的にsecurity.txt運用ガイドラインの更新に繋がりうる。",
+    "source_name": "IETF Datatracker",
+    "source_url": "https://www.ietf.org/archive/id/draft-bruhns-securitytxt-product-security-00.html",
+    "published_at": "2026-09-10T00:00:00Z"
+  },
+  {
+    "id": "tech-3",
+    "category": "tech_advance",
+    "title": "OSSファイアウォール「OPNsense」26.7.4／26.7.4_1がリリース、Suricata 8.0.7・Unbound 1.26.1等を統合",
+    "tech_area": "ツール/フレームワーク",
+    "summary": "オープンソースのFreeBSDベースファイアウォール/ルーターOPNsenseが2026年9月15日に26.7.4を、続くホットフィックス26.7.4_1でUI不具合修正とあわせてIDS/IPSエンジンSuricata 8.0.7、DNSリゾルバUnbound 1.26.1へのポート更新を反映した。",
+    "maturity": "実装/OSS公開",
+    "relevance": "中小企業・SOHO向けの境界防御で広く使われるOSSであり、組み込みIDS/IPSやDNSセキュリティ機能の更新は既存運用環境のパッチ適用対象となる。",
+    "source_name": "OPNsense Documentation / Forum",
+    "source_url": "https://docs.opnsense.org/releases/CE_26.7.html",
+    "published_at": "2026-09-15T00:00:00Z"
+  },
+  {
+    "id": "tech-4",
+    "category": "tech_advance",
+    "title": "説明可能AIで検知結果の信頼性を検証する異常検知フレームワーク「ExCYDER」を提案する論文が公開",
+    "tech_area": "研究発表",
+    "summary": "2026年9月11日にarXivで公開された論文は、分散型エネルギーリソース（DER）ネットワーク向けにLightGBMとSHAPを組み合わせ、異常検知アラートの根拠（特徴量寄与）がモデルの判断と整合しているかを自己検証する「ExCYDER」フレームワークを提案。DNP3データセットで98%超の検知精度、アラートあたり14.5ミリ秒の低遅延を報告している。",
+    "maturity": "研究段階",
+    "relevance": "ブラックボックスAIへの現場オペレーターの不信感に対処する手法として、電力網等の重要インフラSOCにおける検知アラートのトリアージ・説明性向上に応用しうる。",
+    "source_name": "arXiv",
+    "source_url": "https://arxiv.org/abs/2609.12305",
+    "published_at": "2026-09-11T00:00:00Z"
+  },
+  {
+    "id": "tech-5",
+    "category": "tech_advance",
+    "title": "Microsoft Entra、非特権ユーザー向けセキュリティ管理者ロールにID侵害対応アクションを追加",
+    "tech_area": "検知/防御",
+    "summary": "2026年9月のMicrosoft Entraアップデートで、組み込みの「Security Administrator」ロールにアカウントの無効化/有効化、アクティブセッションの失効、パスワード強制リセットといったID侵害対応アクションが追加された。最小権限を維持したまま迅速な初動対応をロール委任できるようにする狙いで、9月末までに展開完了予定。",
+    "maturity": "製品化済み",
+    "relevance": "SOC/IRチームが特権管理者ロールを付与せずにアカウント侵害時の初動対応（セッション失効・パスワードリセット）を委任できるようになり、権限分離と対応速度の両立に寄与する。",
+    "source_name": "Microsoft Tech Community (Entra Blog)",
+    "source_url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+    "published_at": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "tech-6",
+    "category": "tech_advance",
+    "title": "CrowdStrike・Google・Microsoft・Palo Altoが公表するセキュリティAIの性能指標、統一基準の不在が指摘される",
+    "tech_area": "AI活用",
+    "summary": "2026年9月15日付の報道によると、CrowdStrike（SafeMind：検知29%向上等を主張）、Google（Gemini 3.8 Flash CyberのCyberGymスコア86.2%）、Microsoft（Security Copilotで真陽性検出が最大6.5倍）、Palo Alto（Cortexは独自指標非公開）が各社各様のベンチマークでセキュリティAIの優位性を主張しており、記事は指標間に共通の比較単位が存在しない点を課題として指摘している。",
+    "maturity": "製品化済み",
+    "relevance": "セキュリティ運用へのAI導入を検討するCISOにとって、ベンダー提示のAI性能指標を鵜呑みにせず独自検証が必要であることを示す業界動向で、調達・PoC設計の参考になる。",
+    "source_name": "VentureBeat",
+    "source_url": "https://venturebeat.com/security/nobody-can-compare-the-security-ai-numbers-crowdstrike-google-palo-alto-and-microsoft-published-including-the-cisos-who-are-stuck-with-the-results",
+    "published_at": "2026-09-15T00:00:00Z"
+  }
+]

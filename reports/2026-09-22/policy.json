@@ -1,0 +1,80 @@
+[
+  {
+    "id": "policy-1",
+    "category": "policy",
+    "title": "IPA、「情報セキュリティ早期警戒パートナーシップガイドライン」改訂案（第14版）を公開しパブリックコメント開始",
+    "issuing_body": "独立行政法人情報処理推進機構（IPA）",
+    "policy_type": "ガイドライン改定",
+    "summary": "IPAは2026年9月14日から24日の期間、脆弱性関連情報の届出・公表手続きを定める早期警戒パートナーシップガイドラインの改訂案（第14版、全64ページ）への意見募集を開始した。改訂は2026年10月1日施行予定の「サイバー対処能力強化法」に対応するもので、IPAが受け付けた脆弱性関連情報のうち悪用が確認・疑われるものや影響範囲の広いものを内閣府へ通知する手続きが新設される。",
+    "compliance_impact": "脆弱性情報の届出を行うソフトウェア製品開発者・ウェブサイト運営者、および脆弱性対応に関わるセキュリティベンダーが対象。届出情報の取扱いや内閣府への通知フローの変更に伴う社内プロセスの見直しが求められる。",
+    "effective_date": "2026-10-01",
+    "source_name": "IPA（独立行政法人情報処理推進機構）",
+    "source_url": "https://www.ipa.go.jp/security/reports/vuln/kenkyukai-report2026.html",
+    "published_at": "2026-09-14T00:00:00+09:00"
+  },
+  {
+    "id": "policy-2",
+    "category": "policy",
+    "title": "個人情報保護委員会、改正個人情報保護法に関する政令・規則・ガイドライン整備の進め方を決定",
+    "issuing_body": "個人情報保護委員会",
+    "policy_type": "ガイドライン改定",
+    "summary": "2026年9月9日開催の第368回個人情報保護委員会において、「個人情報の保護に関する法律等の一部を改正する法律」（令和8年改正法、2026年7月17日公布）に関する政令・規則・ガイドライン等の整備に関する今後の進め方が決定された。改正法は課徴金制度の導入や委託先管理の強化などを含み、2028年7月17日までに全面施行される予定で、今後段階的にガイドラインやQ&Aが公表される見通し。",
+    "compliance_impact": "個人情報を取り扱う全ての事業者が対象。今後公表される政令・規則・ガイドラインの内容に応じて、社内規程や委託先管理体制の見直しが必要となる見込み。",
+    "effective_date": null,
+    "source_name": "個人情報保護委員会",
+    "source_url": "https://www.ppc.go.jp/personalinfo/legal/r8kaiseihogohou/",
+    "published_at": "2026-09-09T00:00:00+09:00"
+  },
+  {
+    "id": "policy-3",
+    "category": "policy",
+    "title": "EUサイバーレジリエンス法（CRA）、脆弱性・インシデント報告義務が2026年9月11日より開始",
+    "issuing_body": "欧州委員会／ENISA",
+    "policy_type": "法改正",
+    "summary": "EUのサイバーレジリエンス法（Cyber Resilience Act）に基づき、2026年9月11日よりデジタル要素を含む製品の製造者に対する脆弱性・インシデントの報告義務が発効した。悪用が確認された脆弱性や深刻なインシデントについて、認知後24時間以内の早期警告とENISAの単一報告プラットフォームを通じた72時間以内の詳細報告が求められる。",
+    "compliance_impact": "EU市場向けにデジタル要素を含む製品（ハードウェア・ソフトウェア）を供給する全世界の製造者が対象（製造拠点の所在地を問わない）。インシデント対応・脆弱性管理プロセスの整備と報告体制の構築が必要。",
+    "effective_date": "2026-09-11",
+    "source_name": "Freshfields（法律事務所解説）／欧州委員会",
+    "source_url": "https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/cyber-resilience-act-reporting-obligations-take-effect-on-11-september-2026-102nzmk",
+    "published_at": "2026-09-11T00:00:00+02:00"
+  },
+  {
+    "id": "policy-4",
+    "category": "policy",
+    "title": "NIST、AIデータセンターのセキュリティ分析に関する新指針案「SP 800-239」を公開しパブリックコメント募集中",
+    "issuing_body": "米国国立標準技術研究所（NIST）",
+    "policy_type": "業界標準更新",
+    "summary": "NISTは2026年7月27日、AIデータセンターの脅威分析とセキュリティギャップを扱う特別刊行物の初期公開草案「SP 800-239（AI Data Center Security Analysis: A High-Performance Computing Driven Approach）」を公表した。従来のHPC（高性能計算）システムとAIデータセンターをアーキテクチャ・ハードウェア・ソフトウェアスタックの観点で比較し、重要な脅威と対策案を提示する内容で、意見募集は2026年9月25日まで実施されている。",
+    "compliance_impact": "AI向けデータセンターの設計・運用に関わる事業者、クラウド事業者が対象。義務的基準ではないが、今後の調達要件や監査基準の参照文書となる可能性がある。",
+    "effective_date": null,
+    "source_name": "NIST（米国国立標準技術研究所）",
+    "source_url": "https://www.nist.gov/news-events/news/2026/07/ai-data-center-security-analysis-draft-sp-800-239-available-public-comment",
+    "published_at": "2026-07-27T00:00:00-04:00"
+  },
+  {
+    "id": "policy-5",
+    "category": "policy",
+    "title": "CISA、週次脆弱性速報を2026年9月28日で廃止しリスクベースの優先順位付けへ移行",
+    "issuing_body": "米国サイバーセキュリティ・インフラセキュリティ庁（CISA）",
+    "policy_type": "通達",
+    "summary": "CISAは2026年9月18日、長年提供してきた週次脆弱性速報（Weekly Vulnerability Bulletin）を2026年9月28日をもって廃止すると発表した。本変更は、CVSS深刻度スコアのみに依存せず、悪用の有無・資産の露出度・攻撃の自動化可能性・侵害後の技術的影響を基準とするリスクベースの脆弱性管理を求める「BOD 26-04」の方針に沿ったもの。",
+    "compliance_impact": "米国連邦政府機関（特に連邦民間機関）が主な対象で、BOD 26-04に基づく脆弱性管理プロセスへの移行が求められる。米国政府機関と取引・連携する事業者にとっても脆弱性情報の取得方法の変更として影響がある。",
+    "effective_date": "2026-09-28",
+    "source_name": "CISA",
+    "source_url": "https://content.govdelivery.com/accounts/USDHSCISA/bulletins/42b055b",
+    "published_at": "2026-09-18T00:00:00-04:00"
+  },
+  {
+    "id": "policy-6",
+    "category": "policy",
+    "title": "サイバー対処能力強化法、2026年10月1日に本則施行へ－重要インフラ事業者に報告義務",
+    "issuing_body": "内閣官房国家サイバー統括室",
+    "policy_type": "法改正",
+    "summary": "2025年5月に成立した「サイバー対処能力強化法」は、能動的サイバー防御の実現に向けた法律で、2026年10月1日に本則が施行される予定。これにより特別社会基盤事業者による特定侵害事象等の報告義務（第2章）、総合整理分析情報等の提供（第8章）、協議会に関する規定（第9章）が動き出す。通信情報の取得・取扱いに関する第3章〜第7章は2027年11月22日までに別途施行される。",
+    "compliance_impact": "電力・通信・金融等の重要インフラを担う「特別社会基盤事業者」が主な対象。侵害事象発生時の報告体制の整備、協議会への参加体制の構築が求められる。IPAの早期警戒パートナーシップガイドライン改訂（policy-1）もこの施行に対応するもの。",
+    "effective_date": "2026-10-01",
+    "source_name": "内閣官房国家サイバー統括室",
+    "source_url": "https://www.cyber.go.jp/law/lawlink.html",
+    "published_at": "2026-09-15T00:00:00+09:00"
+  }
+]
