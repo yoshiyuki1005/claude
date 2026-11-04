@@ -1,0 +1,222 @@
+[
+  {
+    "id": "incident-5",
+    "category": "incident",
+    "title": "欧州スーパーマーケットの冷蔵システムへのサイバー攻撃、影響が複数国へ拡大",
+    "severity": "Critical",
+    "reasoning": "impact_scopeがフランス国内約700店舗に加え欧州5か国への拡大が分析されている大規模な被害であり、attack_type(標的型攻撃)が重要インフラである食品冷蔵システムを狙い火災発生という物理的被害も伴うため。",
+    "summary": "フランス政府は、Danfoss、Copeland、Dixell製の冷蔵システム遠隔管理モジュールを狙った攻撃により、約700店舗の冷蔵庫が異常高温になり火災や食品廃棄が発生したと公表した。セキュリティ企業Sekoiaの分析官によれば、同様の侵害はスペイン、ポルトガル、ポーランド、ドイツ、ベルギーにも及んでいるとされる。11月4日付の報道では被害範囲の拡大が続いていると伝えられており、攻撃者の特定には至っていない。",
+    "source_name": "DataBreachToday / 複数報道機関",
+    "source_url": "https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/",
+    "published_at": "2026-11-04T00:00:00+09:00"
+  },
+  {
+    "id": "vuln-1",
+    "category": "vulnerability",
+    "title": "Arista VeloCloud Orchestrator に重大なSQLインジェクション脆弱性、実悪用を確認",
+    "severity": "Critical",
+    "reasoning": "exploit_statusが『実悪用確認』でCISA KEVに追加され、cvss_score 9.9の権限昇格が可能なうえ、過去4か月で3件目のゼロデイ実悪用という継続的な標的化が確認されている。",
+    "summary": "Arista VeloCloud Orchestrator（オンプレミス版）にSQLインジェクションの脆弱性が存在し、認証済みユーザーが権限を昇格させてローカルのスーパーユーザー（operator）権限を取得できる。CISAは本脆弱性が実際に悪用されていることを確認し、2026年10月23日に既知の悪用済み脆弱性（KEV）カタログへ追加した。同製品では過去4か月間で3件目の実悪用ゼロデイとされる。",
+    "source_name": "BleepingComputer / CISA KEV",
+    "source_url": "https://bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks",
+    "published_at": "2026-10-22T00:00:00Z"
+  },
+  {
+    "id": "vuln-3",
+    "category": "vulnerability",
+    "title": "BeyondTrust Remote Supportの認証バイパス脆弱性、8月下旬から悪用の可能性",
+    "severity": "Critical",
+    "reasoning": "exploit_statusが『実悪用確認』で2026年8月29日頃からの中国系攻撃グループによるゼロデイ悪用が指摘され、cvss_score 9.8・CISA KEV追加という広範な影響を持つ。",
+    "summary": "BeyondTrust Remote Supportに認証バイパス（スプーフィング、CWE-290）の脆弱性が発見され、内部コンポーネントが受信メッセージの送信元を適切に検証しないためファイル操作が可能になる。研究者は中国系とされる攻撃グループによる2026年8月29日頃からのゼロデイ悪用を指摘しており、CISAは2026年10月16日にKEVカタログへ追加した。",
+    "source_name": "Rapid7",
+    "source_url": "https://www.rapid7.com/blog/post/etr-cve-2026-102764-critical-beyondtrust-remote-support-authentication-bypass-exploited-in-the-wild",
+    "published_at": "2026-10-16T00:00:00Z"
+  },
+  {
+    "id": "vuln-4",
+    "category": "vulnerability",
+    "title": "2026年10月のMicrosoftパッチで実悪用中のWindows Shellゼロデイを修正",
+    "severity": "Critical",
+    "reasoning": "exploit_statusが『実悪用確認』で、affected_productsがWindows全体に及ぶ極めて広範な影響範囲を持つMOTWセキュリティ機能バイパスのゼロデイであるため。",
+    "summary": "Microsoftは2026年10月の月例更新で過去最大規模となる1,400件超の脆弱性を修正した。このうちWindows Shellのセキュリティ機能バイパスであるCVE-2026-96951はMark of the Web（MOTW）保護を回避するもので、公開時点で既に実際の悪用が確認されていた。",
+    "source_name": "CrowdStrike",
+    "source_url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/",
+    "published_at": "2026-10-13T00:00:00Z"
+  },
+  {
+    "id": "vuln-5",
+    "category": "vulnerability",
+    "title": "Cisco Catalyst SD-WAN Managerの認証バイパス脆弱性、実悪用でCISA KEVに追加",
+    "severity": "Critical",
+    "reasoning": "exploit_statusが『実悪用確認』、cvss_score 9.8の未認証認証バイパスで回避策がなく、CISA KEVに追加された広範な影響を持つ脆弱性であるため。",
+    "summary": "Cisco Catalyst SD-WAN Managerの管理APIに認証バイパスの脆弱性が存在し、未認証の攻撃者が管理者相当の権限を取得できる。Ciscoは2026年9月30日に本脆弱性を公開し、同日CISAがKEVカタログに追加した。回避策はなく、修正版への更新が推奨されている。",
+    "source_name": "Security Affairs",
+    "source_url": "https://securityaffairs.com/?p=200152",
+    "published_at": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "vuln-7",
+    "category": "vulnerability",
+    "title": "Cisco Identity Services Engine (ISE) にゼロデイ認証バイパス、CVSS最高値10.0",
+    "severity": "Critical",
+    "reasoning": "exploit_statusが『実悪用確認』、cvss_score 10.0の未認証認証バイパスで、公開PoCも複数報告されるなど影響範囲が極めて広いため。",
+    "summary": "Cisco ISEおよびISE Passive Identity ConnectorのAPIに認証バイパスの脆弱性が存在し、未認証の攻撃者がリモートからアクセス可能となる。CVSSスコアは最高値の10.0で、2026年9月16日の公開時点で既に実悪用が確認されており、複数の公開PoCも報告されている。",
+    "source_name": "Help Net Security",
+    "source_url": "https://www.helpnetsecurity.com/2026/09/17/cisco-ise-vulnerability-exploited-cve-2026-76460/",
+    "published_at": "2026-09-16T00:00:00Z"
+  },
+  {
+    "id": "vuln-8",
+    "category": "vulnerability",
+    "title": "N-able N-Centralの認証前RCE脆弱性、ランサムウェア悪用の懸念",
+    "severity": "Critical",
+    "reasoning": "exploit_statusが『実悪用確認』、cvss_score 9.8の認証前RCEでRMMプラットフォームという多数の管理対象組織に影響しうる広範な脆弱性であり、ランサムウェア悪用の懸念もあるため。",
+    "summary": "RMMプラットフォームN-able N-Centralに認証前の遠隔コード実行（RCE）脆弱性が確認され、2026年9月初旬から実際の悪用が観測された。CISAは2026年9月8日にKEVカタログへ追加し、ランサムウェア攻撃での利用可能性も指摘している。ベンダーはN-central 2026.3 Hotfix 4で修正済み。",
+    "source_name": "The Hacker News / Canadian Cyber Centre",
+    "source_url": "https://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html",
+    "published_at": "2026-09-08T00:00:00Z"
+  },
+  {
+    "id": "vuln-10",
+    "category": "vulnerability",
+    "title": "JFrog Artifactoryの認証不備脆弱性がCISA KEVに追加",
+    "severity": "Critical",
+    "reasoning": "exploit_statusが『実悪用確認』、cvss_score 9.8のデフォルト設定下での未認証管理者権限取得が可能で、CISA KEVに他6件と共に追加された広範な影響を持つため。",
+    "summary": "JFrog Artifactoryにはデフォルト設定下で未認証の攻撃者が管理者権限を取得できる認証不備の脆弱性が存在する。CISAは2026年9月2日、SonicWallやLiteLLMなど他6件とともに本脆弱性をKEVカタログに追加し、実際の悪用を確認したとしている。",
+    "source_name": "The Hacker News",
+    "source_url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+    "published_at": "2026-09-02T00:00:00Z"
+  },
+  {
+    "id": "vuln-9",
+    "category": "vulnerability",
+    "title": "SonicWall SMA1000にチェーン可能な2件のゼロデイ、認証前SSRFとRCEを実悪用",
+    "severity": "Critical",
+    "reasoning": "exploit_statusが『実悪用確認』、cvss_score 10.0のチェーン可能な認証前RCEで、CISAが連邦機関に3日間という極めて短い対応期限を設定するほどの緊急性・広範な影響を持つため。",
+    "summary": "SonicWallはSMA1000シリーズのリモートアクセスアプライアンスに2件のゼロデイ脆弱性（CVE-2026-83548: 認証前SSRF、CVE-2026-83549: 認証後OSコマンドインジェクション）を2026年9月1日に公開した。両者を連鎖させることで未認証の遠隔コード実行が可能とされ、CISAは翌9月2日にKEVカタログへ追加し、連邦機関に3日間の対応期限を設定した。",
+    "source_name": "Ampcus Cyber",
+    "source_url": "https://www.ampcuscyber.com/shadowopsintel/actively-exploited-sonicwall-sma1000-flaws-pre-auth-ssrf-cve-2026-83548-and-rce/",
+    "published_at": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "vuln-12",
+    "category": "vulnerability",
+    "title": "VMware vCenterのパストラバーサル脆弱性、実悪用でCISA KEVに追加",
+    "severity": "Critical",
+    "reasoning": "exploit_statusが『実悪用確認』、cvss_score 9.8でCISA KEVに追加され連邦機関への対応期限が設定された、vCenterという基幹インフラへの広範な影響を持つ脆弱性であるため（攻撃者の帰属に関する一部報道は未確定だが、KEV登録事実自体は確認済み）。",
+    "summary": "Broadcomが提供するVMware vCenterにパストラバーサルの脆弱性が確認され、CVSSスコアは9.8。CISAは2026年8月18日にKEVカタログへ追加し、連邦機関に8月21日までの対応を求めた。一部報道では海外の攻撃者が複数国の環境侵害に利用したとされるが、単一の二次情報源によるもので未確定である。",
+    "source_name": "SecPod",
+    "source_url": "https://secpod.com/learn/security-research/august-2026-kev-surge-critical-patch-priority-for-cve-2026-65400-cve-2026-55040-cve-2026-59310-and-cve-2026-33824",
+    "published_at": "2026-08-18T00:00:00Z"
+  },
+  {
+    "id": "incident-8",
+    "category": "incident",
+    "title": "暗号資産分析企業Nansenの第三者ベンダー侵害、メールアドレス等が流出",
+    "severity": "High",
+    "reasoning": "impact_scopeがユーザーの約6.8%のメールアドレス・暗号資産アドレスに加え一部パスワードハッシュの漏えいを含み、クレジンシャル悪用につながるリスクが高い中規模の侵害であるため。",
+    "summary": "イーサリアム分析サービスを提供するNansenは、利用している第三者ベンダーが侵害され、顧客管理用の管理者アカウントが攻撃者にアクセスされたと公表した。これにより利用者の約6.8%のメールアドレスと一部の暗号資産アドレスが流出し、一部ユーザーはパスワードハッシュも露出したとされる。同社は該当ユーザーにパスワード変更を推奨している。",
+    "source_name": "The Block / Bitdefender",
+    "source_url": "https://www.theblock.co/amp/post/252464/nansen-third-party-security-breach-exposes-6-8-of-user-emails-and-some-blockchain-addresses",
+    "published_at": "2026-10-30T00:00:00+09:00"
+  },
+  {
+    "id": "incident-3",
+    "category": "incident",
+    "title": "ベルギー財務省、サイバー攻撃により税務ポータル「MyMinfin」等を停止",
+    "severity": "High",
+    "reasoning": "impact_scopeが『税務オンラインサービス利用者全般』という国家規模のサービス停止で納税期限延期を招いたが、disclosure_statusは公式発表でデータ漏えいの証拠はないとされるため、大規模情報漏えいに該当するCriticalではなくHighと判断。",
+    "summary": "ベルギー連邦財務省は10月28日、サイバー攻撃を検知したためMyMinfin、Tax-on-web、Biztaxなどのオンライン税務サービスを予防的に停止したと発表した。当局は攻撃者がアプリケーションの制御権を得たりデータを窃取した証拠はないとしており、本来10月31日だった納税期限は11月16日に延期された。11月4日時点でシステムの全面復旧時期は明らかにされていない。",
+    "source_name": "The Record / Brussels Times",
+    "source_url": "https://therecord.media/cyberattack-disrupts-belgian-tax-services-before-deadline",
+    "published_at": "2026-10-28T00:00:00+09:00"
+  },
+  {
+    "id": "incident-6",
+    "category": "incident",
+    "title": "小売大手Ahold Delhaize、サイバー攻撃を受けシステムを一部停止",
+    "severity": "High",
+    "reasoning": "victim_orgが複数ブランド・米欧にわたる大手小売グループでattack_typeはランサムウェアの可能性が指摘される中規模侵害だが、impact_scopeでは顧客決済・薬局データは対象外と説明されるなど確定情報が限定的なためHighと判断。",
+    "summary": "オランダの小売大手Ahold Delhaizeは10月12日、ネットワーク内の「セキュリティ問題」を検知し一部システムを予防的に停止したと発表した。米欧双方のウェブサイトやオンライン注文機能が停止したが、実店舗の営業は継続した。一部報道ではINC Ransomによるランサムウェア攻撃との見方が示されているが、同社はこの攻撃者名を公式には確認していない。現従業員・元従業員とその家族に関する情報が侵害された可能性があるとの報道もあるが、顧客の決済・薬局データへの影響はないとされる。",
+    "source_name": "BleepingComputer / SecurityWeek",
+    "source_url": "https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/",
+    "published_at": "2026-10-12T00:00:00+09:00"
+  },
+  {
+    "id": "vuln-6",
+    "category": "vulnerability",
+    "title": "Zyxel GS1900シリーズのスタックバッファオーバーフロー脆弱性、約1000台が侵害",
+    "severity": "High",
+    "reasoning": "exploit_statusは『実悪用確認』で約996台・48か国という実被害が確認済みだが、cvss_score 8.8とCritical水準(9.0以上)を下回り、affected_productsもネットワークスイッチに限定されるためHighと判断。",
+    "summary": "Zyxel GS1900スイッチのWeb CGIプログラムにスタックベースのバッファオーバーフロー脆弱性が存在する。GreyNoiseの観測によると、2026年8月頃から攻撃者が悪用し、48か国で約996台のデバイスからデータを窃取したとされる。CISAは2026年9月21日にKEVカタログへ追加した。",
+    "source_name": "Help Net Security",
+    "source_url": "https://www.helpnetsecurity.com/?p=385317",
+    "published_at": "2026-09-21T00:00:00Z"
+  },
+  {
+    "id": "vuln-11",
+    "category": "vulnerability",
+    "title": "Microsoft SharePointの認証不備脆弱性、公開PoC後に実悪用確認",
+    "severity": "High",
+    "reasoning": "exploit_statusが『PoC公開』であり実悪用確認済みの他項目とは区別されるが、cvss_score 9.1でCISA KEVにも追加されていることからHighと判断。",
+    "summary": "Microsoft SharePointにおいて、サーバー間通信やワークフローで使用される「actor tokens」の検証が不十分なため認証をバイパスできる脆弱性が確認された。2026年8月11日頃から公開PoCが流通し、CISAは2026年8月18日にKEVカタログへ追加している。",
+    "source_name": "Halo Security",
+    "source_url": "https://blog.halosecurity.com/cve-2026-55040-sharepoint-authentication-bypass/",
+    "published_at": "2026-08-18T00:00:00Z"
+  },
+  {
+    "id": "incident-2",
+    "category": "incident",
+    "title": "Chainstack、サードパーティ経由の侵入で顧客データとパスワードハッシュ流出の可能性を報告",
+    "severity": "Medium",
+    "reasoning": "victim_org公式はimpact_scopeを『GTM関連システムに限定』と説明し本番・顧客データへの影響を否定しており、disclosure_statusが『報道ベース』の一部指摘(パスワードハッシュ流出)を踏まえても確度の高い広範な侵害とは言えないためMediumと判断。",
+    "summary": "ブロックチェーンインフラ企業Chainstackは、サードパーティ製コンポーネントを経由した攻撃者の侵入を10月31日に検知し、同日中にアクセスを遮断したと報告した。侵入範囲はマーケティング(GTM)関連システムに限定され、本番システムや顧客プラットフォームデータには影響していないとしているが、一部報道では顧客データやパスワードハッシュの露出が指摘されており、影響範囲の説明には曖昧さが残る。",
+    "source_name": "The Hacker News",
+    "source_url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+    "published_at": "2026-11-03T00:00:00+09:00"
+  },
+  {
+    "id": "incident-4",
+    "category": "incident",
+    "title": "二次創作サイト「Archive of Our Own(AO3)」がサイバー攻撃で長期停止",
+    "severity": "Medium",
+    "reasoning": "impact_scopeは『詳細な漏えい範囲は未公表』であり、attack_typeや漏えいデータの内容が11月4日時点で確認されていないため、サイト可用性への影響を中心にMediumと判断。",
+    "summary": "大規模な二次創作小説共有サイトAO3の運営団体は10月29日、セキュリティインシデントを検知したとしてサイトを停止した。当初は数時間程度の停止を想定していたが、後に2〜4週間程度のダウンタイムが必要になる可能性があると説明を改めた。復旧後も当面は「劣化状態（degraded state）」、すなわち一部機能のみの提供になる見通しとされ、原因や攻撃者については11月4日時点で明らかにされていない。",
+    "source_name": "Boston Globe / PCGamer",
+    "source_url": "https://www.bostonglobe.com/2026/10/31/arts/hack-fan-fiction-site-ao3-offline-weeks/",
+    "published_at": "2026-10-31T00:00:00+09:00"
+  },
+  {
+    "id": "incident-1",
+    "category": "incident",
+    "title": "Chainalysis、AIエージェント技術を用いた不正アクセスでデータ漏えいを公表",
+    "severity": "Medium",
+    "reasoning": "impact_scopeが『顧客の氏名・メールアドレス等の基本情報』に限定され、調査ファイルや認証情報への不正アクセスの証拠はないとされており、disclosure_statusも公式発表のため中程度と判断。",
+    "summary": "ブロックチェーン分析企業Chainalysisは、外部の攻撃者が「offensive agentic techniques（攻撃的エージェントAI技術）」を用いて社内システムに侵入したと公表した。侵害されたのはユーザーID、氏名、メールアドレス、組織内の役職ラベルなど非機密データで、調査ファイルや認証情報への不正アクセスの証拠はないとしている。検知時期や影響を受けた顧客数など詳細は未公表。",
+    "source_name": "The Hacker News / The Block",
+    "source_url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+    "published_at": "2026-10-31T00:00:00+09:00"
+  },
+  {
+    "id": "incident-7",
+    "category": "incident",
+    "title": "レンタルサーバー事業者DreamHost、File Manager経由の不正アクセスでFTP/メール認証情報が流出",
+    "severity": "Medium",
+    "reasoning": "impact_scopeは『File Managerへログインした利用者のFTP/SFTP認証情報(件数未公表)』に限定され、disclosure_statusは公式発表で対応(機能停止・パスワード変更要請)も取られているためMediumと判断。",
+    "summary": "米ホスティング事業者DreamHostは、10月23日にWebベースのファイル管理ツール「File Manager」のサーバーに第三者が不正アクセスしたと公表した。サードパーティ製ソフトウェアの脆弱性を悪用され、同ツールにログインした利用者のFTP/SFTPユーザー名とパスワードが窃取された可能性がある。同社はFile Managerを10月26日まで停止し、対象利用者にパスワード変更とWebメールの転送・フィルター設定の確認を呼びかけている。影響を受けた顧客数は未公表。",
+    "source_name": "BleepingComputer / DreamHost公式",
+    "source_url": "https://www.dreamhost.com/news/announcements/october-security-incident/",
+    "published_at": "2026-10-26T00:00:00+09:00"
+  },
+  {
+    "id": "vuln-2",
+    "category": "vulnerability",
+    "title": "Oracle、2026年10月分Critical Patch Updateを公開、1,200件超のCVEを修正",
+    "severity": "Medium",
+    "reasoning": "exploit_statusは『情報なし』で実悪用は確認されておらず、patch_availableがtrueで修正済みのため、cvss_score最大10.0と severityは高いものの現時点の脅威はMediumと判断。",
+    "summary": "Oracleは2026年10月20日に四半期ごとのCritical Patch Update（CPU）を公開し、Oracle Database ServerやE-Business Suite、WebLogicなど多数の製品にわたり約1,209件のユニークなCVEを修正した。このうち95件がCritical評価、6件はCVSS最高値の10.0とされ、インターネットに公開されたWebLogicやE-Business Suiteサーバーの早期パッチ適用が推奨されている。",
+    "source_name": "SecurityWeek",
+    "source_url": "https://securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu",
+    "published_at": "2026-10-20T00:00:00Z"
+  }
+]
